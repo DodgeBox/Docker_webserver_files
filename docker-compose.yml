@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  haproxy:
+    build: ./haproxy/.
+    ports:
+     - '8080:8080'
+
+  site1:
+    build: ./site1/.
+
+  site2:
+    build: ./site2/.
+
